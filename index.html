@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--JS-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    
+    <!--CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/all.css" type="text/css"/> <!-- Font Awesome-->
+
+    <title>Advertisement Forms</title>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar-custom">
+      <a class="navbar-brand custom-brand" href="index.html"><img src="assets/logo_2.png" id="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+          <div id="search">
+            <button id="searchbutton" type="submit"><i class="fas fa-search"></i></button>
+            <input class="form-control mr-sm-2" id="searchbar" type="search" placeholder="Search" aria-label="Search">
+          </div>
+        </form>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item nav-item-space" id="create-ad">
+              <a class="nav-link" href="createadvertisement.html"><span id="create-ad-button"><i class="fas fa-plus-circle"></i>Create Ad</span><span class="sr-only"></span></a>
+            </li>
+          <li class="nav-item nav-item-space active">
+            <a class="nav-link" href="messages.html"><i class="fas fa-envelope icon-white"></i><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item nav-item-space">
+              <a class="nav-link" href="notifications.html"><i class="fas fa-bell icon-white"></i><span class="sr-only"></span></a>
+            </li>
+          <li class="nav-item nav-item-space">
+            <a class="nav-link" href="profile.html"><i class="fas fa-user-circle icon-white"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+  <div id="content">
+    <div id="sidebar">
+      <div id="sidebar-content">
+        <h3>Search Filter</h3>
+        <input type="checkbox" id="Electronics" name="Electronics">
+        <label for="Electronics/Gadgets"> Electronics/Gadgets</label><br>
+
+        <input type="checkbox" id="Grocery" name="Grocery">
+        <label for="Grocery/Food"> Grocery/Food Items</label><br>
+
+        <input type="checkbox" id="Clothing" name="Clothing">
+        <label for="Clothing/Jewelry"> Clothing/Jewelry</label><br>
+
+        <input type="checkbox" id="Cosmetics" name="Cosmetics">
+        <label for="Cosmetics"> Cosmetics</label><br>
+
+        <input type="checkbox" id="Furniture" name="Furniture">
+        <label for="Furniture"> Furniture</label><br>
+
+        <input type="checkbox" id="Books" name="Books">
+        <label for="Books"> Books/Magazines</label><br>
+      </div>
+
+
+    </div>
+    <div id="main">
+        <div class="container-fluid">
+ 
+
+            <div class="row">          
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 demo">
+                  <div class="card demo ad" style="width: 18rem;">
+                    <img src="assets/nike.jpg" id="displayitem" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nike Air Jordan 1</h5>
+                      <p><small>Post Title: </small>Nike for Nike</p>
+                      <p class="card-text"> Size 11, Used only twice, trading for Nike Air Max 1 or other Nike Shoes</p>
+                      <p><small>Price Value: </small>Php 6000.00</p>
+                      <a href="ad.html"><button type="button" id="ViewItem">View Item</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 demo">
+                  <div class="card demo ad" style="width: 18rem;">
+                    <img src="assets/nike.jpg" id="displayitem" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nike Air Jordan 1</h5>
+                      <p><small>Post Title: </small>Nike for Nike</p>
+                      <p class="card-text"> Size 11, Used only twice, trading for Nike Air Max 1 or other Nike Shoes</p>
+                      <p><small>Price Value: </small>Php 6000.00</p>
+                      <a href="ad.html"><button type="button" id="ViewItem">View Item</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 demo">
+                  <div class="card demo ad" style="width: 18rem;">
+                    <img src="assets/nike.jpg" id="displayitem" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nike Air Jordan 1</h5>
+                      <p><small>Post Title: </small>Nike for Nike</p>
+                      <p class="card-text"> Size 11, Used only twice, trading for Nike Air Max 1 or other Nike Shoes</p>
+                      <p><small>Price Value: </small>Php 6000.00</p>
+                      <a href="ad.html"><button type="button" id="ViewItem">View Item</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div><!--End of row-->
+              <div class="row">          
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 demo">
+                  <div class="card demo ad" style="width: 18rem;">
+                    <img src="assets/nike.jpg" id="displayitem" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nike Air Jordan 1</h5>
+                      <p><small>Post Title: </small>Nike for Nike</p>
+                      <p class="card-text"> Size 11, Used only twice, trading for Nike Air Max 1 or other Nike Shoes</p>
+                      <p><small>Price Value: </small>Php 6000.00</p>
+                      <a href="ad.html"><button type="button" id="ViewItem">View Item</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 demo">
+                  <div class="card demo ad" style="width: 18rem;">
+                    <img src="assets/nike.jpg" id="displayitem" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nike Air Jordan 1</h5>
+                      <p><small>Post Title: </small>Nike for Nike</p>
+                      <p class="card-text"> Size 11, Used only twice, trading for Nike Air Max 1 or other Nike Shoes</p>
+                      <p><small>Price Value: </small>Php 6000.00</p>
+                      <a href="ad.html"><button type="button" id="ViewItem">View Item</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 demo">
+                  <div class="card demo ad" style="width: 18rem;">
+                    <img src="assets/nike.jpg" id="displayitem" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nike Air Jordan 1</h5>
+                      <p><small>Post Title: </small>Nike for Nike</p>
+                      <p class="card-text"> Size 11, Used only twice, trading for Nike Air Max 1 or other Nike Shoes</p>
+                      <p><small>Price Value: </small>Php 6000.00</p>
+                      <a href="ad.html"><button type="button" id="ViewItem">View Item</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div><!--End of row-->
+              <div class="row">          
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 demo">
+                  <div class="card demo ad" style="width: 18rem;">
+                    <img src="assets/nike.jpg" id="displayitem" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nike Air Jordan 1</h5>
+                      <p><small>Post Title: </small>Nike for Nike</p>
+                      <p class="card-text"> Size 11, Used only twice, trading for Nike Air Max 1 or other Nike Shoes</p>
+                      <p><small>Price Value: </small>Php 6000.00</p>
+                      <a href="ad.html"><button type="button" id="ViewItem">View Item</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 demo">
+                  <div class="card demo ad" style="width: 18rem;">
+                    <img src="assets/nike.jpg" id="displayitem" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nike Air Jordan 1</h5>
+                      <p><small>Post Title: </small>Nike for Nike</p>
+                      <p class="card-text"> Size 11, Used only twice, trading for Nike Air Max 1 or other Nike Shoes</p>
+                      <p><small>Price Value: </small>Php 6000.00</p>
+                      <a href="ad.html"><button type="button" id="ViewItem">View Item</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 demo">
+                  <div class="card demo ad" style="width: 18rem;">
+                    <img src="assets/nike.jpg" id="displayitem" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nike Air Jordan 1</h5>
+                      <p><small>Post Title: </small>Nike for Nike</p>
+                      <p class="card-text"> Size 11, Used only twice, trading for Nike Air Max 1 or other Nike Shoes</p>
+                      <p><small>Price Value: </small>Php 6000.00</p>
+                      <a href="ad.html"><button type="button" id="ViewItem">View Item</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div><!--End of row-->
+        
+
+    </div>
+    
+</div>
+
+
+
+ 
+      
+
+
+
+
+
+
+
+  </body>
+</html>

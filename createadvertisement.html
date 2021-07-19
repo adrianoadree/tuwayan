@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--JS-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    
+    <!--CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/all.css" type="text/css"/> <!-- Font Awesome-->
+
+    <title>Advertisement Forms</title>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar-custom">
+      <a class="navbar-brand custom-brand" href="index.html"><img src="assets/logo_2.png" id="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+          <div id="search">
+            <button id="searchbutton" type="submit"><i class="fas fa-search"></i></button>
+            <input class="form-control mr-sm-2" id="searchbar" type="search" placeholder="Search" aria-label="Search">
+          </div>
+        </form>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item nav-item-space" id="create-ad">
+              <a class="nav-link" href="createadvertisement.html"><span id="create-ad-button"><i class="fas fa-plus-circle"></i>Create Ad</span><span class="sr-only"></span></a>
+            </li>
+          <li class="nav-item nav-item-space active">
+            <a class="nav-link" href="messages.html"><i class="fas fa-envelope icon-white"></i><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item nav-item-space">
+              <a class="nav-link" href="notifications.html"><i class="fas fa-bell icon-white"></i><span class="sr-only"></span></a>
+            </li>
+          <li class="nav-item nav-item-space">
+            <a class="nav-link" href="profile.html"><i class="fas fa-user-circle icon-white"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    
+    <div class="container-fluid">
+      <div class="row" id="content">
+          
+        <div class="col-xl-5 col-lg-5 col-sm-5 col-xs-5" style="text-align: center;">
+          <div class="row">
+            <div class="col-5" id="defaultitemphoto"></div>
+            <div class="col-5" id="defaultitemphoto"></div>
+          </div>
+          <div class="row">
+            <div class="col-6 form-group">
+              <input type="file">
+            </div>
+            <div class="col-6 form-group">
+              <input type="file">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5" id="defaultitemphoto"></div>
+            <div class="col-5" id="defaultitemphoto"></div>
+          </div>
+          <div class="row">
+            <div class="col-6 form-group">
+              <input type="file">
+            </div>
+            <div class="col-6 form-group">
+              <input type="file">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5" id="defaultitemphoto"></div>
+            <div class="col-5" id="defaultitemphoto"></div>
+          </div>
+          <div class="row">
+            <div class="col-6 form-group">
+              <input type="file">
+            </div>
+            <div class="col-6 form-group">
+              <input type="file">
+            </div>
+          </div>
+
+
+        </div><!--End of left Column-->
+
+        <div class="col-xl-7 col-lg-7 col-sm-7 col-xs-7">
+          <div class="form-group">
+            <label for="exampleInputName">Post Title</label>
+            <input type="text" name="fullname" class="form-control" id="PostTitle" placeholder="Title of your Advertisement" required="required">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Item Category</label>
+            <div class="row">
+              <div class="col-5">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Electronics/Gadgets
+                  </label>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">    
+                    Grocery/Food Items
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Clothing/Jewelry
+                  </label>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Cosmetics
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Furniture
+                  </label>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Books/Magazines
+                  </label>
+                </div>
+              </div>
+            </div>
+          
+
+          </br>
+            <div class="form-group">
+              <label for="#additem">Add Item(s)</label>
+            
+                    <button type="button" id="additem" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Open My Closet
+                    </button>
+                    
+                    <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">My Closet</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <table class="table table-hover myadstable">
+                              <thead class="bg-white ">
+                                <tr>
+                                  <th>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1"></label>
+                                    </div></th>
+                                  <th>Item Name</th>
+                                  <th>Category</th>
+                                  <th>Quantity</th>
+                                  <th>Photos</th>
+                                  <th>Actions</th>
+                                  
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                      <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1"></label>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <a href="ad.html"><small>Nike Air Jordan 1</small></a>
+                                  </td>
+                                  
+
+
+                                  <td><small>Clothing/Jewelry</small></td>
+                                  <td><small>1</small></td>
+                                  <td>
+                                    <img src="assets/nike.jpg" alt="Nike image" id="itemimage">
+                                    
+                                  <td>
+                                      <a href="ad.html"><i class="far fa-edit"></i></a>
+                                      /
+                                      <a href="#"><i class="fa fa-trash"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                      <label class="custom-control-label" for="customCheck1"></label>
+                                    </div>
+                                  </td>
+
+                                  <td><a href="ad.html"><small>iPhone X</small></a></td>
+                                  <td><small>Electronics/Gadgets</small></td>
+                                  <td><small>1</small></td>
+                                  <td>
+                                    <img src="assets/item.jpg" alt="iphone image" id="itemimage">
+                                    
+                                  <td>
+                                      <a href="ad.html"><i class="far fa-edit"></i></a>
+                                      /
+                                      <a href="#"><i class="fa fa-trash"></i></a>
+                                  </td>
+                                </tr>
+                                
+                
+                              
+                              </tbody>
+                            </table>
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </br>
+                  <div class="form-group">
+                    <label for="PostDescription">Post Description</label>
+                    <textarea class="form-control" id="PostDescription" rows="7"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputName">Declared Item Price Value</label>
+                    <input type="text" name="fullname" class="form-control" id="itemvalue" placeholder="Enter Peso Price Value of Items to be advertised" required="required">
+                  </div>
+
+
+                  
+                </br>
+            <input type="submit" class="btnRegister" id="additem" value="Submit" style="float: right;"/>
+              </div>
+
+
+
+
+
+
+
+
+
+
+            
+            
+
+
+
+
+        </div><!--End of Right Column-->
+
+
+      </div>
+    </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+ 
+      
+
+
+
+
+
+
+
+  </body>
+</html>

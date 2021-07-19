@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--JS-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    
+    <!--CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/all.css" type="text/css"/> <!-- Font Awesome-->
+
+    <title>Advertisement Forms</title>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar-custom">
+      <a class="navbar-brand custom-brand" href="index.html"><img src="assets/logo_2.png" id="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+          <div id="search">
+            <button id="searchbutton" type="submit"><i class="fas fa-search"></i></button>
+            <input class="form-control mr-sm-2" id="searchbar" type="search" placeholder="Search" aria-label="Search">
+          </div>
+        </form>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item nav-item-space" id="create-ad">
+              <a class="nav-link" href="createadvertisement.html"><span id="create-ad-button"><i class="fas fa-plus-circle"></i>Create Ad</span><span class="sr-only"></span></a>
+            </li>
+          <li class="nav-item nav-item-space active">
+            <a class="nav-link" href="messages.html"><i class="fas fa-envelope icon-white"></i><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item nav-item-space">
+              <a class="nav-link" href="notifications.html"><i class="fas fa-bell icon-white"></i><span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                   Dropdown</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#!">Action</a>
+                  <a class="dropdown-item" href="#!">Another action</a>
+                </div>
+              </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+  <div id="content" style="padding: 30px 120px 30px 120px;">
+    <div class="row-fluid">
+        <form class="form-horizontal">
+          <fieldset>
+            <div id="legend">
+              <legend class="">Support Ticket</legend>
+              
+            </div>
+            <!-- Name -->
+            <div class="control-group" style="margin-top: 50px;">
+              <label class="control-label"  for="username">Report Issued by</label>
+              <div class="controls">
+                <input type="text" id="username" name="username" placeholder="" class="input-xlarge" value="Pedro Penduko" readonly>
+              </div>
+            </div>
+       
+          
+            <!-- Expiry-->
+            <div class="control-group" style="margin-top: 20px;">
+              <label class="control-label" for="password">Report Category</label>
+              <div class="controls">
+                <select class="span3" name="reportcategory" id="reportcategory">
+                  <option></option>
+                  <option value="01">Fraudulent users</option>
+                  <option value="02">Product different from photos/Advertisements</option>
+                  <option value="03">Cheap quality products/Product damage</option>
+                  <option value="01">Others</option>
+                </select>
+                
+              </div>
+            </div>
+       
+            <!--Ticket Documentation -->
+            <div class="control-group" style="margin-top: 30px;">
+                <label class="control-label"  for="username">Describe the Situation</label>
+                <div class="controls">
+                    <textarea class="form-control" id="ticketDocumentation" rows="7" name="ticketDocumentation" placeholder=""></textarea>
+                </div>
+              </div>
+
+
+            </br>
+            <!-- Submit -->
+            <div class="control-group" style="float: right;">
+              <div class="controls">
+                
+                <button class="btn btn-success">Submit</button>
+              </div>
+            </div>
+       
+          </fieldset>
+        </form>
+      </div>
+      </div>    
+
+
+ 
+      
+
+
+
+
+
+
+
+  </body>
+</html>

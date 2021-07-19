@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--JS-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    
+    <!--CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/all.css" type="text/css"/> <!-- Font Awesome-->
+
+    <title>Advertisement Forms</title>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar-custom">
+      <a class="navbar-brand custom-brand" href="index.html"><img src="assets/logo_2.png" id="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+          <div id="search">
+            <button id="searchbutton" type="submit"><i class="fas fa-search"></i></button>
+            <input class="form-control mr-sm-2" id="searchbar" type="search" placeholder="Search" aria-label="Search">
+          </div>
+        </form>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item nav-item-space" id="create-ad">
+              <a class="nav-link" href="createadvertisement.html"><span id="create-ad-button"><i class="fas fa-plus-circle"></i>Create Ad</span><span class="sr-only"></span></a>
+            </li>
+          <li class="nav-item nav-item-space active">
+            <a class="nav-link" href="messages.html"><i class="fas fa-envelope icon-white"></i><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item nav-item-space">
+              <a class="nav-link" href="notifications.html"><i class="fas fa-bell icon-white"></i><span class="sr-only"></span></a>
+            </li>
+          <li class="nav-item nav-item-space">
+            <a class="nav-link" href="profile.html"><i class="fas fa-user-circle icon-white"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+    <div class="container">
+
+        <div class="row" style="margin-top: 15px;">
+
+            <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 usertab spacing">
+                <img src="assets/useravatar.jpg" id="useravatar">
+                <h3>Pedro Penduko <span><i class="far fa-check-circle" style="font-size: 35px; margin-left: 5px; color:rgba(108, 176, 240, 0.884)"></i></span> </h3>                  
+        
+               
+                <div class="usertabinfo">
+                  <span style="text-align: center; font-size: 20px;">Connects: 50 <a href="connects.html"><button type="button" id="addconnects"><i class="fas fa-plus"></i></button></a></span>
+                </div>
+              </br>
+
+
+                <div style="text-align: left;">
+                    <h6><b>Username</b>: @ppenduko</h6>
+                    <h6><b>Email</b>: ppenduko@gmail.com</h6>
+                    <h6><b>Contact Number</b>: 09091234567</h6>
+                    <h6><b>Age</b>: 28</h6>
+                    <h6><b>Address</b>: Naga City, Camarines Sur</h6>
+                <div  style="text-align: center;">
+                  <a href="forms.html"><button type="button" id="edit-info-button">Edit Info</button></a>
+                </div>
+              </br>
+                
+                
+                
+                    
+               
+
+
+
+                </div>
+                
+               
+
+
+
+
+            </div>
+
+            <div class="col-xl-9 col-lg-9 col-sm-9 col-xs-9 profilenavbar">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="profile.html">My Ads</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="mycloset.html">My Closet</a>
+                    </li>
+                  </ul>
+                  
+                  <div class="tab-pane fade show active" id="myads" role="tabpanel">
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <table class="table table-hover myadstable">
+                                  <thead class="bg-white ">
+                                    <tr>
+                                      <th>Item Name</th>
+                                      <th>Category</th>
+                                      <th>Comments</th>
+                                      <th>Date Published</th>
+                                      <th>Status</th>
+                                      <th>Actions</th>
+                                      
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td><a href="ad.html"><small>Nike Shoes</small></a></td>
+                                      <td><small>Clothing/Jewelry</small></td>
+                                      <td><small>3</small></td>
+                                      <td><small>July 5, 2021</small></td>
+                                      <td><small>In Progress</small></td>
+                                      <td>
+                                        <button type="button" id="visibilitybutton">
+                                          <i class="fas fa-eye"></i>
+                                        </button>
+                                          /
+                                          <a href="ad.html"><i class="far fa-edit"></i></a>
+                                          /
+                                          <a href="#"><i class="fa fa-trash"></i></a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="ad.html"><small>iPhone X</small></a></td>
+                                      <td><small>Electronics/Gadgets</small></td>
+                                      <td><small>3</small></td>
+                                      <td><small>July 5, 2021</small></td>
+                                      <td><small>Cancelled</small></td>
+                                      <td>
+                                        <button type="button" id="visibilitybutton">
+                                          <i class="fas fa-eye"></i>
+                                        </button>
+                                          /
+                                          <a href="ad.html"><i class="far fa-edit"></i></a>
+                                          /
+                                          <a href="#"><i class="fa fa-trash"></i></a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="ad.html"><small>10 Kilo Rice</small></a></td>
+                                      <td><small>Grocery/Food Items</small></td>
+                                      <td><small>3</small></td>
+                                      <td><small>July 5, 2021</small></td>
+                                      <td><small>Completed</small></td>
+                                      <td>
+                                        <button type="button" id="visibilitybutton">
+                                          <i class="fas fa-eye"></i>
+                                        </button>
+                                          /
+                                          <a href="ad.html"><i class="far fa-edit"></i></a>
+                                          /
+                                          <a href="#"><i class="fa fa-trash"></i></a>
+                                      </td>
+                                    </tr>
+
+                                   
+                                  </tbody>
+                                </table>
+                      </div>
+                  </div> 
+                  </div>
+
+
+            </div>
+
+
+        </div><!--End of row-->
+    </div><!--End of Container-->
+  
+
+
+
+
+
+
+
+
+
+ 
+      
+
+
+
+
+
+
+
+  </body>
+</html>
